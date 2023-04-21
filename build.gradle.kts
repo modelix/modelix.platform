@@ -42,7 +42,7 @@ dependencies {
 
         //projectional editor
         api("org.modelix:projectional-editor:${projectionalEditorVersion}")
-        api("org.modelix:projectional-ediotr-js:${projectionalEditorVersion}")
+        api("org.modelix:projectional-editor-js:${projectionalEditorVersion}")
         api("org.modelix:projectional-editor-jvm:${projectionalEditorVersion}")
 
         //incremental
