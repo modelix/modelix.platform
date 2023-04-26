@@ -91,3 +91,40 @@ publishing {
         }
     }
 }
+subprojects {
+    apply(plugin="java-platform")
+    apply(plugin="maven-publish")
+
+    publishing {
+        publications {
+            create<MavenPublication>("modelixMpsPlatform") {
+                group = "org.modelix"
+                version = platformVersion
+
+                from(components["javaPlatform"])
+            }
+        }
+        repositories {
+            //maven {
+            //    name = "itemis"
+            //    url = if (version.toString().contains("SNAPSHOT")) {
+            //        uri("https://artifacts.itemis.cloud/repository/maven-mps-snapshots/")
+            //    } else {
+            //        uri("https://artifacts.itemis.cloud/repository/maven-mps-releases/")
+            //    }
+            //    credentials {
+            //        username = project.findProperty("artifacts.itemis.cloud.user").toString()
+            //        password = project.findProperty("artifacts.itemis.cloud.pw").toString()
+            //    }
+            //}
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/modelix/modelix.platform")
+                credentials {
+                    username = project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR")
+                    password = project.findProperty("gpr.key") as? String ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
+    }
+}
