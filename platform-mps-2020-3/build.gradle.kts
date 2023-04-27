@@ -1,5 +1,5 @@
-val modelixPatchVersion: String by rootProject
-val modelixVersion = "2020.3.$modelixPatchVersion"
+val modelixMPSPatchVersion: String by rootProject
+val modelixVersion = "2020.3.$modelixMPSPatchVersion"
 val platformVersion = file("../platform_version.txt").readText().trim()
 
 javaPlatform {
@@ -17,3 +17,4 @@ dependencies {
         api("org.modelix.mps:web-editors-plugin:$modelixVersion")
     }
 }
+

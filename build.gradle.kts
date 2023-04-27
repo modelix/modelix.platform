@@ -10,10 +10,8 @@ plugins {
 }
 
 val modelixCoreVersion: String by project
-val modelixVersion: String by project
-val projectionalEditorVersion: String by project
 val incrementalVersion: String by project
-val mpsBuildVersion: String by project
+val buildToolsVersion: String by project
 
 dependencies {
     constraints {
@@ -40,20 +38,15 @@ dependencies {
         api("org.modelix:model-server-api-jvm:${modelixCoreVersion}")
         api("org.modelix:model-server-with-dependencies:${modelixCoreVersion}")
 
-        //projectional editor
-        api("org.modelix:projectional-editor:${projectionalEditorVersion}")
-        api("org.modelix:projectional-editor-js:${projectionalEditorVersion}")
-        api("org.modelix:projectional-editor-jvm:${projectionalEditorVersion}")
-
         //incremental
         api("org.modelix:incremental:${incrementalVersion}")
         api("org.modelix:incremental-js:${incrementalVersion}")
         api("org.modelix:incremental-jvm:${incrementalVersion}")
 
         //mps build tools
-        api("org.modelix.mps:build-tools-lib:${mpsBuildVersion}")
-        api("org.modelix.mps:build-tools-gradle:${mpsBuildVersion}")
-        api("org.modelix.mps.build-tools:org.modelix.mps.build-tools.gradle.plugin:${mpsBuildVersion}")
+        api("org.modelix.mps:build-tools-lib:${buildToolsVersion}")
+        api("org.modelix.mps:build-tools-gradle:${buildToolsVersion}")
+        api("org.modelix.mps.build-tools:org.modelix.mps.build-tools.gradle.plugin:${buildToolsVersion}")
     }
 }
 
@@ -128,3 +121,4 @@ subprojects {
         }
     }
 }
+
