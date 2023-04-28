@@ -1,0 +1,2 @@
+* xref:platform:explanation/index.adoc[]
+

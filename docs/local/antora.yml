@@ -1,0 +1,7 @@
+name: platform
+title: modelix.platform
+version: true
+start_page: platform:index.adoc
+nav:
+  - modules/platform/partials/nav-local.adoc
+
