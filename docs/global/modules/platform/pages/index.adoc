@@ -1,0 +1,14 @@
+= Welcome to modelix.platform!
+:navtitle: Welcome
+
+== Introduction
+
+TODO
+
+include::platform:partial$short-description.adoc[]
+
+
+== Getting Started
+
+include::modelix:ROOT:tutorial/build-component.adoc[leveloffset=+2]
+

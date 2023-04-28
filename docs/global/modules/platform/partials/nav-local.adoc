@@ -1,0 +1,23 @@
+* Platform
+** xref:platform:index.adoc[]
+** Tutorials
++
+--
+include::platform:partial$nav-tutorial.adoc[]
+--
+** How-To Guides
++
+--
+include::platform:partial$nav-howto.adoc[]
+--
+** Reference
++
+--
+include::platform:partial$nav-reference.adoc[]
+--
+** Explanation
++
+--
+include::platform:partial$nav-explanation.adoc[]
+--
+

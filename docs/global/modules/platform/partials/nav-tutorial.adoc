@@ -1,0 +1,1 @@
+* xref:platform:tutorial/index.adoc[]
