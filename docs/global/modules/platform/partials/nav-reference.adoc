@@ -1,2 +1,2 @@
-* xref:platform:reference/component-platform.adoc[]
+//* xref:platform:reference/component-platform.adoc[]
 

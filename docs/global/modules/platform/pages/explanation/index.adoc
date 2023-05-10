@@ -1,5 +1,5 @@
-= modelix.platform Explanation
-:navtitle: modelix.platform
+= The modelix Gradle platform
+:navtitle: Gradle Platform
 
 The modelix platform is a Gradle platform built using https://docs.gradle.org/current/userguide/java_platform_plugin.html[Gradle's Java Platform Plugin].
 It aggregates the versions of individual modelix components.

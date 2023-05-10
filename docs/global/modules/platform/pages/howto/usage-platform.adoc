@@ -1,5 +1,5 @@
 = How-to use the platform to streamline modelix dependencies
-:navtitle: Use the platform to streamline dependencies
+:navtitle: Use platform to streamline dependencies
 
 == General Usage
 
@@ -19,7 +19,8 @@ dependencies {
 }
 --
 
-Dependencies to modelix components can then be declared without a version number (as the version declared in the platform will be used). For example:
+Dependencies to modelix components can then be declared without a version number (as the version declared in the platform will be used).
+For example:
 
 [source, kotlin]
 --
@@ -29,7 +30,8 @@ dependencies {
 }
 --
 
-NOTE: If you want to handle dependencies to MPS version-specific modelix components yourself, you can use `org.modelix:platform` instead, which does not contain these dependencies. 
+NOTE: If you want to handle dependencies to MPS version-specific modelix components yourself, you can use `org.modelix:platform` instead, which does not contain these dependencies.
+However, sometimes it might be necessary to pick a specific version of a single component, e.g. when one wants to test new features.
 
 == Overriding versions
 

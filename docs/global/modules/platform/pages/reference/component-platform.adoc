@@ -1,9 +1,0 @@
-= modelix.platform Reference
-:navtitle: modelix.platform
-
-:tip-caption: 🔗 Quick Links
-[TIP]
---
-// TODO Nexus once it's published to the nexus
-https://github.com/modelix/modelix.platform[Repository^] | https://github.com/modelix/modelix.platform/blob/main/build.gradle.kts[Buildfile^]
---

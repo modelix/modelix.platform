@@ -1,1 +1,2 @@
-The `modelix.platform` repository contains the gradle platforms for modelix.
+The `modelix.platform` repository contains the Gradle platforms for modelix.
+It provides all modelix component versions for each modelix platform release.
