@@ -1,1 +1,1 @@
-* xref:platform:tutorial/index.adoc[]
+//* xref:platform:tutorial/index.adoc[]

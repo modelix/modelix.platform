@@ -1,1 +1,1 @@
-TODO modelix.platform self description
+The `modelix.platform` repository contains the gradle platforms for modelix.

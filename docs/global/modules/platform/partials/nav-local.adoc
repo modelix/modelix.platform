@@ -1,10 +1,10 @@
 * Platform
 ** xref:platform:index.adoc[]
-** Tutorials
-+
---
-include::platform:partial$nav-tutorial.adoc[]
---
+// ** Tutorials
+// +
+// --
+// include::platform:partial$nav-tutorial.adoc[]
+// --
 ** How-To Guides
 +
 --
