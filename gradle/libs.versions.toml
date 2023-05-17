@@ -1,0 +1,35 @@
+[versions]
+core = "2.4.0"
+incremental = "0.1.4"
+buildTools = "1.0.11"
+
+[libraries]
+modelix-authorization = { group = "org.modelix", name = "authorization", version.ref = "core"}
+modelix-light-model-client = { group = "org.modelix", name = "light-model-client", version.ref = "core"}
+modelix-model-server-lib = { group = "org.modelix", name = "model-server-lib", version.ref = "core"}
+modelix-metamodel-export = { group = "org.modelix.mps", name = "metamodel-export", version.ref = "core"}
+modelix-model-api-gen = { group = "org.modelix", name = "model-api-gen", version.ref = "core"}
+modelix-model-api-gen-gradle = { group = "org.modelix", name = "model-api-gen-gradle", version.ref = "core"}
+modelix-model-api-gen-runtime = { group = "org.modelix", name = "model-api-gen-runtime", version.ref = "core"}
+modelix-model-api-gen-runtime-js = { group = "org.modelix", name = "model-api-gen-runtime-js", version.ref = "core"}
+modelix-model-api-gen-runtime-jvm = { group = "org.modelix", name = "model-api-gen-runtime-jvm", version.ref = "core"}
+modelix-model-api = { group = "org.modelix", name = "model-api", version.ref = "core"}
+modelix-model-api-js = { group = "org.modelix", name = "model-api-js", version.ref = "core"}
+modelix-model-api-jvm = { group = "org.modelix", name = "model-api-jvm", version.ref = "core"}
+modelix-model-api-gen-plugin = { group = "org.modelix.model-api-gen", name = "org.modelix.model-api-gen.gradle.plugin", version.ref = "core"}
+modelix-model-client = { group = "org.modelix", name = "model-client", version.ref = "core"}
+modelix-model-client-js = { group = "org.modelix", name = "model-client-js", version.ref = "core"}
+modelix-model-client-jvm = { group = "org.modelix", name = "model-client-jvm", version.ref = "core"}
+modelix-model-server = { group = "org.modelix", name = "model-server", version.ref = "core"}
+modelix-model-server-api = { group = "org.modelix", name = "model-server", version.ref = "core"}
+modelix-model-server-api-js = { group = "org.modelix", name = "modelix-model-server-api-js", version.ref = "core"}
+modelix-model-server-api-jvm = { group = "org.modelix", name = "modelix-model-server-api-jvm", version.ref = "core"}
+modelix-model-server-with-dependencies = { group = "org.modelix", name = "modelix-model-server-with-dependencies", version.ref = "core"}
+
+modelix-incremental = { group = "org.modelix", name = "incremental", version.ref = "incremental" }
+modelix-incremental-js = { group = "org.modelix", name = "incremental-js", version.ref = "incremental" }
+modelix-incremental-jvm = { group = "org.modelix", name = "incremental-jvm", version.ref = "incremental" }
+
+modelix-build-tools-lib = { group = "org.modelix.mps", name = "build-tools-lib", version.ref = "buildTools" }
+modelix-build-tools-gradle = { group = "org.modelix.mps", name = "build-tools-gradle", version.ref = "buildTools" }
+modelix-build-tools-plugin = { group = "org.modelix.mps.build-tools", name = "org.modelix.mps.build-tools.gradle.plugin", version.ref = "buildTools"}

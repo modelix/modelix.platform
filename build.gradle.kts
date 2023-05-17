@@ -9,44 +9,40 @@ plugins {
     `maven-publish`
 }
 
-val modelixCoreVersion: String by project
-val incrementalVersion: String by project
-val buildToolsVersion: String by project
-
 dependencies {
     constraints {
         //modelix core
-        api("org.modelix:authorization:${modelixCoreVersion}")
-        api("org.modelix:light-model-client:${modelixCoreVersion}")
-        api("org.modelix:model-server-lib:${modelixCoreVersion}")
-        api("org.modelix.mps:metamodel-export:${modelixCoreVersion}")
-        api("org.modelix:model-api-gen:${modelixCoreVersion}")
-        api("org.modelix:model-api-gen-gradle:${modelixCoreVersion}")
-        api("org.modelix:model-api-gen-runtime:${modelixCoreVersion}")
-        api("org.modelix:model-api-gen-runtime-js:${modelixCoreVersion}")
-        api("org.modelix:model-api-gen-runtime-jvm:${modelixCoreVersion}")
-        api("org.modelix.model-api-gen:org.modelix.model-api-gen.gradle.plugin:${modelixCoreVersion}")
-        api("org.modelix:model-api:${modelixCoreVersion}")
-        api("org.modelix:model-api-js:${modelixCoreVersion}")
-        api("org.modelix:model-api-jvm:${modelixCoreVersion}")
-        api("org.modelix:model-client:${modelixCoreVersion}")
-        api("org.modelix:model-client-js:${modelixCoreVersion}")
-        api("org.modelix:model-client-jvm:${modelixCoreVersion}")
-        api("org.modelix:model-server:${modelixCoreVersion}")
-        api("org.modelix:model-server-api:${modelixCoreVersion}")
-        api("org.modelix:model-server-api-js:${modelixCoreVersion}")
-        api("org.modelix:model-server-api-jvm:${modelixCoreVersion}")
-        api("org.modelix:model-server-with-dependencies:${modelixCoreVersion}")
+        api(libs.modelix.authorization)
+        api(libs.modelix.light.model.client)
+        api(libs.modelix.model.server.lib)
+        api(libs.modelix.metamodel.export)
+        api(libs.modelix.model.api.gen)
+        api(libs.modelix.model.api.gen.gradle)
+        api(libs.modelix.model.api.gen.plugin)
+        api(libs.modelix.model.api.gen.runtime)
+        api(libs.modelix.model.api.gen.runtime.js)
+        api(libs.modelix.model.api.gen.runtime.jvm)
+        api(libs.modelix.model.api)
+        api(libs.modelix.model.api.js)
+        api(libs.modelix.model.api.jvm)
+        api(libs.modelix.model.client)
+        api(libs.modelix.model.client.js)
+        api(libs.modelix.model.client.jvm)
+        api(libs.modelix.model.server)
+        api(libs.modelix.model.server.api)
+        api(libs.modelix.model.server.api.js)
+        api(libs.modelix.model.server.api.jvm)
+        api(libs.modelix.model.server.with.dependencies)
 
         //incremental
-        api("org.modelix:incremental:${incrementalVersion}")
-        api("org.modelix:incremental-js:${incrementalVersion}")
-        api("org.modelix:incremental-jvm:${incrementalVersion}")
+        api(libs.modelix.incremental)
+        api(libs.modelix.incremental.js)
+        api(libs.modelix.incremental.jvm)
 
         //mps build tools
-        api("org.modelix.mps:build-tools-lib:${buildToolsVersion}")
-        api("org.modelix.mps:build-tools-gradle:${buildToolsVersion}")
-        api("org.modelix.mps.build-tools:org.modelix.mps.build-tools.gradle.plugin:${buildToolsVersion}")
+        api(libs.modelix.build.tools.lib)
+        api(libs.modelix.build.tools.gradle)
+        api(libs.modelix.build.tools.plugin)
     }
 }
 
