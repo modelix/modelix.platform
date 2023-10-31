@@ -1,5 +1,4 @@
-val modelixMPSPatchVersion: String by rootProject
-val modelixVersion = "2021.2.$modelixMPSPatchVersion"
+val modelixVersion = "2021.2.$${libs.versions.modelixMPSPatch}"
 val platformVersion = file("../platform_version.txt").readText().trim()
 
 javaPlatform {
