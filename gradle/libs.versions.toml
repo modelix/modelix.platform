@@ -1,8 +1,8 @@
 [versions]
-core = "2.4.0"
-incremental = "0.1.4"
-buildTools = "1.0.11"
-modelixMPSPatch = "145"
+core = "3.12.1"
+incremental = "0.2.0"
+buildTools = "1.1.0"
+modelixMPSPatch = "157"
 
 [libraries]
 modelix-authorization = { group = "org.modelix", name = "authorization", version.ref = "core"}
