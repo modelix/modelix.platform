@@ -1,30 +1,63 @@
 [versions]
-core = "2.4.0"
-incremental = "0.1.4"
-buildTools = "1.0.11"
+core = "3.12.1"
+incremental = "0.2.0"
+buildTools = "1.1.0"
+modelixMPSPatch = "157"
 
 [libraries]
 modelix-authorization = { group = "org.modelix", name = "authorization", version.ref = "core"}
+modelix-bulk-model-sync-lib = { group = "org.modelix", name = "bulk-model-sync-lib", version.ref = "core"}
+modelix-bulk-model-sync-lib-js = { group = "org.modelix", name = "bulk-model-sync-lib-js", version.ref = "core"}
+modelix-bulk-model-sync-lib-jvm = { group = "org.modelix", name = "bulk-model-sync-lib-jvm", version.ref = "core"}
+modelix-bulk-model-sync-gradle = { group = "org.modelix", name = "bulk-model-sync-gradle", version.ref = "core"}
+modelix-bulk-model-sync-solution = { group = "org.modelix.mps", name = "bulk-model-sync-solution", version.ref = "core"}
+modelix-bulk-model-sync-plugin = { group = "org.modelix.bulk-model-sync", name = "org.modelix.bulk-model-sync.gradle.plugin", version.ref = "core"}
+modelix-kotlin-utils = { group = "org.modelix", name = "kotlin-utils", version.ref = "core"}
+modelix-kotlin-utils-js = { group = "org.modelix", name = "kotlin-utils-js", version.ref = "core"}
+modelix-kotlin-utils-jvm = { group = "org.modelix", name = "kotlin-utils-jvm", version.ref = "core"}
 modelix-light-model-client = { group = "org.modelix", name = "light-model-client", version.ref = "core"}
-modelix-model-server-lib = { group = "org.modelix", name = "model-server-lib", version.ref = "core"}
+modelix-light-model-client-js = { group = "org.modelix", name = "light-model-client-js", version.ref = "core"}
+modelix-light-model-client-jvm = { group = "org.modelix", name = "light-model-client-jvm", version.ref = "core"}
 modelix-metamodel-export = { group = "org.modelix.mps", name = "metamodel-export", version.ref = "core"}
 modelix-model-api-gen = { group = "org.modelix", name = "model-api-gen", version.ref = "core"}
 modelix-model-api-gen-gradle = { group = "org.modelix", name = "model-api-gen-gradle", version.ref = "core"}
 modelix-model-api-gen-runtime = { group = "org.modelix", name = "model-api-gen-runtime", version.ref = "core"}
 modelix-model-api-gen-runtime-js = { group = "org.modelix", name = "model-api-gen-runtime-js", version.ref = "core"}
 modelix-model-api-gen-runtime-jvm = { group = "org.modelix", name = "model-api-gen-runtime-jvm", version.ref = "core"}
+modelix-model-api-gen-plugin = { group = "org.modelix.model-api-gen", name = "org.modelix.model-api-gen.gradle.plugin", version.ref = "core"}
 modelix-model-api = { group = "org.modelix", name = "model-api", version.ref = "core"}
 modelix-model-api-js = { group = "org.modelix", name = "model-api-js", version.ref = "core"}
 modelix-model-api-jvm = { group = "org.modelix", name = "model-api-jvm", version.ref = "core"}
-modelix-model-api-gen-plugin = { group = "org.modelix.model-api-gen", name = "org.modelix.model-api-gen.gradle.plugin", version.ref = "core"}
 modelix-model-client = { group = "org.modelix", name = "model-client", version.ref = "core"}
 modelix-model-client-js = { group = "org.modelix", name = "model-client-js", version.ref = "core"}
 modelix-model-client-jvm = { group = "org.modelix", name = "model-client-jvm", version.ref = "core"}
+modelix-model-datastructure = { group = "org.modelix", name = "model-datastructure", version.ref = "core"}
+modelix-model-datastructure-js = { group = "org.modelix", name = "model-datastructure-js", version.ref = "core"}
+modelix-model-datastructure-jvm = { group = "org.modelix", name = "model-datastructure-jvm", version.ref = "core"}
 modelix-model-server = { group = "org.modelix", name = "model-server", version.ref = "core"}
 modelix-model-server-api = { group = "org.modelix", name = "model-server", version.ref = "core"}
 modelix-model-server-api-js = { group = "org.modelix", name = "modelix-model-server-api-js", version.ref = "core"}
 modelix-model-server-api-jvm = { group = "org.modelix", name = "modelix-model-server-api-jvm", version.ref = "core"}
+modelix-model-server-lib = { group = "org.modelix", name = "model-server-lib", version.ref = "core"}
 modelix-model-server-with-dependencies = { group = "org.modelix", name = "modelix-model-server-with-dependencies", version.ref = "core"}
+modelix-modelql-client = { group = "org.modelix", name = "modelql-client", version.ref = "core" }
+modelix-modelql-client-js = { group = "org.modelix", name = "modelql-client-js", version.ref = "core" }
+modelix-modelql-client-jvm = { group = "org.modelix", name = "modelql-client-jvm", version.ref = "core" }
+modelix-modelql-core = { group = "org.modelix", name = "modelql-core", version.ref = "core" }
+modelix-modelql-core-js = { group = "org.modelix", name = "modelql-core-js", version.ref = "core" }
+modelix-modelql-core-jvm = { group = "org.modelix", name = "modelql-core-jvm", version.ref = "core" }
+modelix-modelql-html = { group = "org.modelix", name = "modelql-html", version.ref = "core" }
+modelix-modelql-html-js = { group = "org.modelix", name = "modelql-html-js", version.ref = "core" }
+modelix-modelql-html-jvm = { group = "org.modelix", name = "modelql-html-jvm", version.ref = "core" }
+modelix-modelql-server = { group = "org.modelix", name = "modelql-server", version.ref = "core"}
+modelix-modelql-typed = { group = "org.modelix", name = "modelql-typed", version.ref = "core" }
+modelix-modelql-typed-js = { group = "org.modelix", name = "modelql-typed-js", version.ref = "core" }
+modelix-modelql-typed-jvm = { group = "org.modelix", name = "modelql-typed-jvm", version.ref = "core" }
+modelix-modelql-untyped = { group = "org.modelix", name = "modelql-untyped", version.ref = "core" }
+modelix-modelql-untyped-js = { group = "org.modelix", name = "modelql-untyped-js", version.ref = "core" }
+modelix-modelql-untyped-jvm = { group = "org.modelix", name = "modelql-untyped-jvm", version.ref = "core" }
+modelix-mps-model-adapters = { group = "org.modelix.mps", name = "model-adapters", version.ref = "core" }
+modelix-mps-model-server-plugin = { group = "org.modelix.mps", name = "model-server-plugin", version.ref = "core"}
 
 modelix-incremental = { group = "org.modelix", name = "incremental", version.ref = "incremental" }
 modelix-incremental-js = { group = "org.modelix", name = "incremental-js", version.ref = "incremental" }
