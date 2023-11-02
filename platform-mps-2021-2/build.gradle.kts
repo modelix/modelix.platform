@@ -12,7 +12,6 @@ dependencies {
         api("org.modelix.mps.model-download-gradle:org.modelix.mps.model-download-gradle.gradle.plugin:$modelixVersion")
         api("org.modelix.mps:model-server-sync-plugin:$modelixVersion")
         api("org.modelix.mps:build-solution:$modelixVersion")
-        api("org.modelix.mps:headless-runner:$modelixVersion")
         api("org.modelix.mps:web-editors-plugin:$modelixVersion")
     }
 }
