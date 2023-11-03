@@ -8,5 +8,5 @@ include::platform:partial$short-description.adoc[]
 
 == Getting Started
 
-include::modelix:ROOT:tutorial/build-component.adoc[leveloffset=+2]
+include::ROOT:tutorial/build-component.adoc[leveloffset=+2]
 
