@@ -67,6 +67,18 @@ dependencies {
         api(libs.modelix.incremental.js)
         api(libs.modelix.incremental.jvm)
 
+        //mps build tools
+        api(libs.modelix.build.tools.lib)
+        api(libs.modelix.build.tools.gradle)
+        api(libs.modelix.build.tools.plugin)
+
+        //mps plugins
+        api(libs.modelix.mps.diff.plugin)
+        api(libs.modelix.mps.generator.execution.plugin)
+        api(libs.modelix.mps.legacy.sync.plugin)
+        api(libs.modelix.mps.sync.plugin.lib)
+        api(libs.modelix.mps.sync.plugin)
+
     }
 }
 

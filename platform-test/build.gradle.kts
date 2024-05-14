@@ -25,7 +25,10 @@ kotlin {
         val test by getting {
             dependencies {
                 api(enforcedPlatform("org.modelix:platform:$platformVersion"))
-                implementation("org.modelix:model-server")
+                implementation("org.modelix:model-server") // to test core version
+                implementation("org.modelix:incremental") // to test incremental version
+                implementation("org.modelix.mps:build-tools-lib") // to test build-tools version
+                implementation("org.modelix.mps:sync-plugin-lib") // to test mps plugins version
             }
         }
     }

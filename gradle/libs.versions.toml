@@ -2,6 +2,7 @@
 core = "3.12.1"
 incremental = "0.2.0"
 buildTools = "1.1.0"
+mpsPlugins = "0.7.0"
 
 [libraries]
 modelix-authorization = { group = "org.modelix", name = "authorization", version.ref = "core"}
@@ -65,3 +66,9 @@ modelix-incremental-jvm = { group = "org.modelix", name = "incremental-jvm", ver
 modelix-build-tools-lib = { group = "org.modelix.mps", name = "build-tools-lib", version.ref = "buildTools" }
 modelix-build-tools-gradle = { group = "org.modelix.mps", name = "build-tools-gradle", version.ref = "buildTools" }
 modelix-build-tools-plugin = { group = "org.modelix.mps.build-tools", name = "org.modelix.mps.build-tools.gradle.plugin", version.ref = "buildTools"}
+
+modelix-mps-diff-plugin = { group = "org.modelix.mps", name = "diff-plugin", version.ref = "mpsPlugins" }
+modelix-mps-generator-execution-plugin = { group = "org.modelix.mps", name = "generator-execution-plugin", version.ref = "mpsPlugins" }
+modelix-mps-legacy-sync-plugin = { group = "org.modelix.mps", name = "legacy-sync-plugin", version.ref = "mpsPlugins" }
+modelix-mps-sync-plugin-lib = { group = "org.modelix.mps", name = "sync-plugin-lib", version.ref = "mpsPlugins" }
+modelix-mps-sync-plugin = { group = "org.modelix.mps", name = "sync-plugin", version.ref = "mpsPlugins" }
