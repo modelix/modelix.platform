@@ -9,8 +9,8 @@ modelix-authorization = { group = "org.modelix", name = "authorization", version
 modelix-bulk-model-sync-lib = { group = "org.modelix", name = "bulk-model-sync-lib", version.ref = "core"}
 modelix-bulk-model-sync-lib-js = { group = "org.modelix", name = "bulk-model-sync-lib-js", version.ref = "core"}
 modelix-bulk-model-sync-lib-jvm = { group = "org.modelix", name = "bulk-model-sync-lib-jvm", version.ref = "core"}
+modelix-bulk-model-sync-mps =  { group = "org.modelix", name = "bulk-model-sync-mps", version.ref = "core"}
 modelix-bulk-model-sync-gradle = { group = "org.modelix", name = "bulk-model-sync-gradle", version.ref = "core"}
-modelix-bulk-model-sync-solution = { group = "org.modelix.mps", name = "bulk-model-sync-solution", version.ref = "core"}
 modelix-bulk-model-sync-plugin = { group = "org.modelix.bulk-model-sync", name = "org.modelix.bulk-model-sync.gradle.plugin", version.ref = "core"}
 modelix-kotlin-utils = { group = "org.modelix", name = "kotlin-utils", version.ref = "core"}
 modelix-kotlin-utils-js = { group = "org.modelix", name = "kotlin-utils-js", version.ref = "core"}
