@@ -5,17 +5,14 @@
 
 The modelix platform provides component versions.
 To enforce these versions in your project's build you can add the platform as an enforcedPlatform.
-We make the following assumptions:
-
-* the string variable `mps_version` contains the mps version that is used in your project, e.g. `2021-1`
-* the string variable `modelix_platform_version` contains the version of the modelix platform you want to use, e. g. `23.1.0`
+We assume that the string variable `modelix_platform_version` contains the version of the modelix platform you want to use, e. g. `24.1.0`
 
 To enforce the versions provided by the platform in your Gradle build, you can use `enforcedPlatform` inside of a `dependencies` block like this:
 
 [source, kotlin]
 --
 dependencies {
-    implementation(enforcedPlatform("org.modelix:platform-mps-$mps_version:$modelix_platform_version"))
+    implementation(enforcedPlatform("org.modelix:platform:$modelix_platform_version"))
 }
 --
 
@@ -25,13 +22,10 @@ For example:
 [source, kotlin]
 --
 dependencies {
-    implementation(enforcedPlatform("org.modelix:platform-mps-$mps_version:$modelix_platform_version"))
+    implementation(enforcedPlatform("org.modelix:platform:$modelix_platform_version"))
     implementation("org.modelix:model-client")
 }
 --
-
-NOTE: If you want to handle dependencies to MPS version-specific modelix components yourself, you can use `org.modelix:platform` instead, which does not contain these dependencies.
-However, sometimes it might be necessary to pick a specific version of a single component, e.g. when one wants to test new features.
 
 == Overriding versions
 
@@ -42,7 +36,7 @@ In order to override versions inside the platform during dependency resolution, 
 [source, kotlin]
 --
 dependencies {
-    implementation(platform("org.modelix:platform-mps-$mps_version:$modelix_platform_version"))
+    implementation(platform("org.modelix:platform:$modelix_platform_version"))
     implementation("org.modelix:model-client:2.4.0")
 }
 --
